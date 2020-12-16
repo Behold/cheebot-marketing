@@ -1,0 +1,108 @@
+@font-face {
+    font-family: 'Tiempos Headline';
+    src: url('TiemposHeadline-Medium.eot');
+    src: local('Tiempos Headline Medium'), local('TiemposHeadline-Medium'),
+        url('TiemposHeadline-Medium.eot?#iefix') format('embedded-opentype'),
+        url('TiemposHeadline-Medium.woff') format('woff'),
+        url('./src/fonts/Tiempos/TiemposHeadline-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Tiempos Text';
+    src: url('./src/fonts/Tiempos/TiemposText-Regular.eot');
+    src: local('Tiempos Text Regular'), local('TiemposText-Regular'),
+        url('./src/fonts/Tiempos/TiemposText-Regular.eot?#iefix') format('embedded-opentype'),
+        url('./src/fonts/Tiempos/TiemposText-Regular.woff') format('woff'),
+        url('./src/fonts/Tiempos/TiemposText-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Tiempos Headline';
+    src: url('./src/fonts/Tiempos/TiemposHeadline-Light.eot');
+    src: local('Tiempos Headline Light'), local('TiemposHeadline-Light'),
+        url('./src/fonts/Tiempos/TiemposHeadline-Light.eot?#iefix') format('embedded-opentype'),
+        url('./src/fonts/Tiempos/TiemposHeadline-Light.woff') format('woff'),
+        url('./src/fonts/Tiempos/TiemposHeadline-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Tiempos Text';
+    src: url('./src/fonts/Tiempos/TiemposText-Bold.eot');
+    src: local('Tiempos Text Bold'), local('TiemposText-Bold'),
+        url('./src/fonts/Tiempos/TiemposText-Bold.eot?#iefix') format('embedded-opentype'),
+        url('./src/fonts/Tiempos/TiemposText-Bold.woff') format('woff'),
+        url('./src/fonts/Tiempos/TiemposText-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+h2.font-serif, h3.font-serif {
+  position: relative;
+  z-index: 1;
+}
+.headline-underline {
+	position: relative;
+	display: inline-block;
+	white-space: nowrap;
+}
+.headline-underline .underline-marker {
+	position: absolute;
+	left: 0;
+	z-index: -1;
+	overflow: hidden;
+}
+.headline-underline .underline-marker:before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-position: 0;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.underline-marker {
+	width: calc(100% + 4px);
+}
+.underline-marker:before {
+	background-image: url(../src/img/svgs/underline-marker.svg);
+}
+@media (min-width:768px) and (max-width:989px) {
+	.headline-underline .underline-marker {
+    bottom: 4px;
+    height: 8px;
+	}
+}
+@media (min-width:990px) {
+	.headline-underline .underline-marker {
+		bottom: 2px;
+    height: 10px;
+		background-size: 100% 100%;
+	}
+}
+@media (min-width:1450px) {
+	.headline-underline .underline-marker {
+    bottom: 1px;
+    height: 10px;
+	}
+}
+@media (max-width:767px) {
+	.headline-underline .underline-marker {
+		bottom: 0;
+		height: 6px;
+		background-size: cover;
+	}
+  h2 .headline-underline .underline-marker {
+    bottom: 3px
+  }
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

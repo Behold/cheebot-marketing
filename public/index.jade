@@ -1,0 +1,389 @@
+doctype html
+html
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+    link(rel="stylesheet" href="styles.css")
+  body
+    // This example requires Tailwind CSS v2.0+
+    .relative.pt-6.pb-16(class='sm:pb-24')
+      .max-w-7xl.mx-auto.px-4(class='sm:px-6')
+        nav.relative.flex.items-center.justify-between(class='sm:h-10 md:justify-center' aria-label='Global')
+          .flex.items-center.flex-1(class='md:absolute md:inset-y-0 md:left-0')
+            .flex.items-center.justify-between.w-full(class='md:w-auto')
+              a(href='#')
+                span.sr-only Cheebot
+                svg(width='160px' viewBox='0 0 182 36' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink')
+                  g(id='Cheebot-2.0' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd')
+                    g#Group-12(transform='translate(-109.000000, -44.000000)')
+                      g(transform='translate(109.000000, 37.000000)')
+                        g#cheebot-logo(transform='translate(0.807692, 7.000000)')
+                          path#emblem(d='M18.3776011,26.5255826 C21.6689131,26.5255826 24.6676412,24.598738 25.4908994,20.5175287 C25.4908994,20.5175287 29.0191987,20.5175287 36.0757971,20.5175287 C34.6873787,31.2876364 26.5766606,36 18.3776011,36 C11.1008896,36 4.73607294,32.1911641 1.75750353,26.0519546 L18.3776011,26.5255826 Z M25.183752,14.3314164 C24.0700899,11.0378338 21.3426489,9.47379826 18.3777856,9.47379826 L1.757688,9.94804538 C4.73625741,3.8088359 11.1010741,-3.55271368e-15 18.3777856,-3.55271368e-15 C26.3474533,-3.55271368e-15 34.2991109,5.054079 35.850021,14.3150277 C35.850021,14.3150277 25.183752,14.3150277 25.183752,14.3314164 Z M16.0636142,14.504161 C16.0636142,15.5975297 15.2015262,16.4927795 14.11623,16.5268312 L0.000614898721,16.8209139 C0.0971539981,15.1790035 0.393535182,13.6250084 0.864547603,12.1731683 L14.11623,12.4808717 C15.2015262,12.5149234 16.0636142,13.4107923 16.0636142,14.504161 Z M16.0636142,21.5230803 C16.0636142,22.616449 15.2015262,23.5116988 14.11623,23.5457505 L0.862088008,23.8194022 C0.391075587,22.3663239 0.0953093019,20.8117097 -9.73443548e-13,19.168561 L14.11623,19.499791 C15.2015262,19.5338427 16.0636142,20.4297116 16.0636142,21.5230803 Z' fill='#FF6600')
+                          path#typeface(d='M59.3578986,30.96 C66.1978986,30.96 69.7978986,25.92 69.7978986,25.92 L67.2778986,23.4 C67.2778986,23.4 64.5778986,27.36 59.3578986,27.36 C54.1378986,27.36 49.9978986,23.22 49.9978986,18 C49.9978986,12.78 54.1378986,8.64 59.3578986,8.64 C64.5778986,8.64 67.0978986,12.42 67.0978986,12.42 L69.6178986,9.9 C69.6178986,9.9 66.1978986,5.04 59.3578986,5.04 C51.7978986,5.04 46.0378986,10.8 46.0378986,18 C46.0378986,25.2 51.7978986,30.96 59.3578986,30.96 Z M76.3378986,30.6 L76.3378986,21.24 C76.3378986,18 78.1378986,16.2 80.8378986,16.2 C83.1778986,16.2 84.9778986,18 84.9778986,20.52 L84.9778986,30.6 L88.5778986,30.6 L88.5778986,20.52 C88.5778986,15.84 85.6978986,12.96 81.5578986,12.96 C78.3178986,12.96 76.3378986,15.12 76.3378986,15.12 L76.3378986,5.4 L72.7378986,5.4 L72.7378986,30.6 L76.3378986,30.6 Z M100.337899,30.96 C105.197899,30.96 107.897899,27.36 107.897899,27.36 L105.557899,25.02 L105.538104,25.04855 C105.333766,25.3373554 103.550626,27.72 100.337899,27.72 C97.4578986,27.72 95.2978986,25.56 94.9378986,23.22 L108.437899,23.22 C108.437899,23.22 108.617899,22.5 108.617899,21.42 C108.617899,16.56 105.017899,12.96 100.157899,12.96 C95.2978986,12.96 91.3378986,16.92 91.3378986,21.78 C91.3378986,26.82 95.4778986,30.96 100.337899,30.96 Z M105.089899,20.16 L95.0818986,20.16 C95.6578986,17.82 97.4578986,16.02 100.157899,16.02 C102.857899,16.02 104.657899,17.82 105.089899,20.16 Z M119.297899,30.96 C124.157899,30.96 126.857899,27.36 126.857899,27.36 L124.517899,25.02 L124.498104,25.04855 C124.293766,25.3373554 122.510626,27.72 119.297899,27.72 C116.417899,27.72 114.257899,25.56 113.897899,23.22 L127.397899,23.22 C127.397899,23.22 127.577899,22.5 127.577899,21.42 C127.577899,16.56 123.977899,12.96 119.117899,12.96 C114.257899,12.96 110.297899,16.92 110.297899,21.78 C110.297899,26.82 114.437899,30.96 119.297899,30.96 Z M124.049899,20.16 L114.041899,20.16 C114.617899,17.82 116.417899,16.02 119.117899,16.02 C121.817899,16.02 123.617899,17.82 124.049899,20.16 Z M139.877899,30.96 C144.377899,30.96 148.337899,27 148.337899,21.96 C148.337899,16.92 144.377899,12.96 139.877899,12.96 C136.457899,12.96 134.297899,15.3 134.297899,15.3 L134.297899,5.4 L130.697899,5.4 L130.697899,30.6 L134.297899,30.6 L134.297899,28.62 C134.297899,28.62 136.457899,30.96 139.877899,30.96 Z M139.517899,27.72 C136.817899,27.72 134.297899,25.2 134.297899,21.96 C134.297899,18.72 136.817899,16.2 139.517899,16.2 C142.217899,16.2 144.737899,18.72 144.737899,21.96 C144.737899,25.2 142.217899,27.72 139.517899,27.72 Z M159.017899,30.96 C163.877899,30.96 168.017899,26.82 168.017899,21.96 C168.017899,17.1 163.877899,12.96 159.017899,12.96 C154.157899,12.96 150.017899,17.1 150.017899,21.96 C150.017899,26.82 154.157899,30.96 159.017899,30.96 Z M159.017899,27.72 C156.137899,27.72 153.617899,25.2 153.617899,21.96 C153.617899,18.72 156.137899,16.2 159.017899,16.2 C161.897899,16.2 164.417899,18.72 164.417899,21.96 C164.417899,25.2 161.897899,27.72 159.017899,27.72 Z M177.617899,30.96 C179.057899,30.96 180.137899,30.6 180.137899,30.6 L180.137899,27.36 C180.137899,27.36 179.237899,27.72 178.337899,27.72 C177.077899,27.72 176.177899,26.82 176.177899,25.524 L176.177899,16.56 L179.777899,16.56 L179.777899,13.32 L176.177899,13.32 L176.177899,7.56 L172.937899,7.56 L172.937899,11.16 C172.937899,12.6 172.217899,13.32 171.137899,13.32 L169.337899,13.32 L169.337899,16.56 L172.577899,16.56 L172.577899,25.56 C172.577899,29.16 174.377899,30.96 177.617899,30.96 Z' fill='#121212' fill-rule='nonzero')
+
+              .-mr-2.flex.items-center(class='md:hidden')
+                button#main-menu.bg-gray-50.rounded-md.p-2.inline-flex.items-center.justify-center.text-gray-400(type='button' class='hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500' aria-haspopup='true')
+                  span.sr-only Open main menu
+                  // Heroicon name: menu
+                  svg.h-6.w-6(xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='currentColor' aria-hidden='true')
+                    path(stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M4 6h16M4 12h16M4 18h16')
+          .hidden(class='md:flex md:space-x-10')
+            a.font-medium.text-gray-500(href='#' class='hover:text-gray-900') Product
+            a.font-medium.text-gray-500(href='#' class='hover:text-gray-900') Features
+            a.font-medium.text-gray-500(href='#' class='hover:text-gray-900') Marketplace
+            a.font-medium.text-gray-500(href='#' class='hover:text-gray-900') Company
+          .hidden(class='md:absolute md:flex md:items-center md:justify-end md:inset-y-0 md:right-0')
+            span.inline-flex.rounded-md.shadow
+              a.inline-flex.items-center.px-4.py-2.border.border-transparent.text-base.font-medium.rounded-md.text-indigo-600.bg-white(href='#' class='hover:bg-gray-50')
+                | Log in
+      //
+        Mobile menu, show/hide based on menu open state.
+        Entering: "duration-150 ease-out"
+        From: "opacity-0 scale-95"
+        To: "opacity-100 scale-100"
+        Leaving: "duration-100 ease-in"
+        From: "opacity-100 scale-100"
+        To: "opacity-0 scale-95"
+      .absolute.top-0.inset-x-0.p-2.transition.transform.origin-top-right(class='md:hidden')
+        .rounded-lg.shadow-md.bg-white.ring-1.ring-black.ring-opacity-5.overflow-hidden
+          .px-5.pt-4.flex.items-center.justify-between
+            div
+              img.h-8.w-auto(src='https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg' alt='')
+            .-mr-2
+              button.bg-white.rounded-md.p-2.inline-flex.items-center.justify-center.text-gray-400(type='button' class='hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500')
+                span.sr-only Close menu
+                // Heroicon name: x
+                svg.h-6.w-6(xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='currentColor' aria-hidden='true')
+                  path(stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M6 18L18 6M6 6l12 12')
+          div(role='menu' aria-orientation='vertical' aria-labelledby='main-menu')
+            .px-2.pt-2.pb-3(role='none')
+              a.block.px-3.py-2.rounded-md.text-base.font-medium.text-gray-700(href='#' class='hover:text-gray-900 hover:bg-gray-50' role='menuitem') Product
+              a.block.px-3.py-2.rounded-md.text-base.font-medium.text-gray-700(href='#' class='hover:text-gray-900 hover:bg-gray-50' role='menuitem') Features
+              a.block.px-3.py-2.rounded-md.text-base.font-medium.text-gray-700(href='#' class='hover:text-gray-900 hover:bg-gray-50' role='menuitem') Marketplace
+              a.block.px-3.py-2.rounded-md.text-base.font-medium.text-gray-700(href='#' class='hover:text-gray-900 hover:bg-gray-50' role='menuitem') Company
+            div(role='none')
+              a.block.w-full.px-5.py-3.text-center.font-medium.text-indigo-600.bg-gray-50(href='#' class='hover:bg-gray-100' role='menuitem')
+                | Log in
+       
+    .relative
+      main(class='lg:relative')
+        img.hidden.absolute.left-full.transform(class='lg:block -translate-x-1/2 -translate-y-12' src='../src/img/hero-coffee-bg-beans.png' alt='')
+
+        .mx-auto.max-w-7xl.w-full.pt-16.pb-20.text-center(class='lg:py-48 lg:text-left')
+          .px-4(class='lg:w-2/3 sm:px-8 xl:pr-16')
+            h1.text-4xl.tracking-tight.font-serif.font-extrabold.text-gray-900(class='sm:text-5xl md:text-6xl lg:text-5xl xl:text-6xl')
+              span.block(class='xl:inline') One platform for all your dining services
+            p.mt-3.max-w-md.mx-auto.text-lg.text-gray-500(class='sm:text-xl md:mt-5 md:max-w-3xl')
+              | Cheebot is a fully branded, virtual food hall for corporate or university campuses. And your clients will love using it!
+            .mt-10(class='sm:flex sm:justify-center lg:justify-start')
+              .rounded-md.shadow
+                a.w-full.flex.items-center.justify-center.px-8.py-3.border.border-transparent.text-base.font-medium.rounded-md.text-white.bg-indigo-600(href='#' class='hover:bg-indigo-700 md:py-4 md:text-lg md:px-10')
+                  | Get started
+              .mt-3.rounded-md.shadow(class='sm:mt-0 sm:ml-3')
+                a.w-full.flex.items-center.justify-center.px-8.py-3.border.border-transparent.text-base.font-medium.rounded-md.text-indigo-600.bg-white(href='#' class='hover:bg-gray-50 md:py-4 md:text-lg md:px-10')
+                  | Request a demo
+        .relative.w-full.h-64(class='sm:h-72 md:h-96 lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/3 lg:h-full')
+          img.absolute.inset-0.w-full.h-full.object-cover.rounded-tl-lg.rounded-bl-lg(src='../src/img/hero-coffee.jpg' alt='')
+    
+    .mx-auto.max-w-7xl.w-full.text-center(class='lg:py-24 lg:text-left')
+      h3 Why use Cheebot
+
+    //- Eliminate long lines
+    .bg-blue-cheebot
+      .mx-auto.py-16
+        .rounded-lg(class='lg:grid lg:grid-cols-2 lg:gap-4 xs:overflow-hidden')
+          .-mt-6.aspect-w-5.aspect-h-3(class='md:aspect-w-2 md:aspect-h-1')
+            img.transform.translate-x-6.rounded-md.object-cover.object-left-top(class='md:-translate-x-6 lg:translate-y-20' src='https://tailwindui.com/img/component-images/full-width-with-sidebar.jpg' alt='App screenshot')
+          .pt-10.pb-12.px-6(class='sm:pt-16 sm:px-16 lg:py-16 lg:pr-0 xl:py-20 xl:px-20')
+            div(class='lg:self-center')
+              h2.text-3xl.font-extrabold.text-white(class='sm:text-4xl')
+                | Eliminate long lines
+              p.mt-4.text-lg.leading-6.text-indigo-200
+                | Prevent Congestions. Allow guests to order instantly or choose a pickup time. Notify customers via text when their food is ready for pickup.
+   
+    //- Our platform, your brand
+    .bg-pink-dark
+      .mx-auto.py-16
+        .rounded-lg(class='lg:grid lg:grid-cols-2 lg:gap-4 xs:overflow-hidden')
+          .pt-10.pb-12.px-6(class='sm:pt-16 sm:px-16 lg:py-16 lg:pr-0 xl:py-20 xl:px-20')
+            div(class='lg:self-center')
+              h2.text-3xl.font-extrabold.text-white(class='sm:text-4xl')
+                | Our platform, your brand
+              p.mt-4.text-lg.leading-6.text-indigo-200
+                | Full white label solution integrated directly into your brands website. retain valuable customer data and keep customers on your company owned site. 
+          .-mt-6.aspect-w-5.aspect-h-3(class='md:aspect-w-2 md:aspect-h-1')
+            img.transform.translate-x-6.rounded-md.object-cover.object-left-top(class='md:translate-x-6 lg:translate-y-20' src='https://tailwindui.com/img/component-images/full-width-with-sidebar.jpg' alt='App screenshot')
+
+    //- No app required
+    .bg-blue-light
+      .mx-auto.py-16
+        .rounded-lg(class='lg:grid lg:grid-cols-2 lg:gap-4 xs:overflow-hidden')
+          .-mt-6.aspect-w-5.aspect-h-3(class='md:aspect-w-2 md:aspect-h-1')
+            img.transform.translate-x-6.rounded-md.object-cover.object-left-top(class='md:-translate-x-6 lg:translate-y-20' src='https://tailwindui.com/img/component-images/full-width-with-sidebar.jpg' alt='App screenshot')
+          .pt-10.pb-12.px-6(class='sm:pt-16 sm:px-16 lg:py-16 lg:pr-0 xl:py-20 xl:px-20')
+            div(class='lg:self-center')
+              h2.text-3xl.font-extrabold.text-white(class='sm:text-4xl')
+                | No app required
+              p.mt-4.text-lg.leading-6.text-indigo-200
+                | Customers can order straight from your page on desktop and mobile, without the need to download a dedicated app. Customers can create an account in seconds using only their phone number. No more having to remember a username and password.
+   
+    //- Compass Group approved
+    .bg-pink-light
+      .mx-auto.py-16
+        .rounded-lg(class='lg:grid lg:grid-cols-2 lg:gap-4 xs:overflow-hidden')
+          .pt-10.pb-12.px-6(class='sm:pt-16 sm:px-16 lg:py-16 lg:pr-0 xl:py-20 xl:px-20')
+            div(class='lg:self-center')
+              h2.text-3xl.font-extrabold.text-white(class='sm:text-4xl')
+                | Compass Group approved
+              p.mt-4.text-lg.leading-6.text-indigo-200
+                | Cheebot is a proud partner within an extraordinary network of approved businesses and services.
+          .-mt-6.aspect-w-5.aspect-h-3(class='md:aspect-w-2 md:aspect-h-1')
+            img.transform.translate-x-6.rounded-md.object-cover.object-left-top(class='md:translate-x-6 lg:translate-y-20' src='https://tailwindui.com/img/component-images/full-width-with-sidebar.jpg' alt='App screenshot')
+
+    // Testimonial
+    section.py-12.bg-blue-50.overflow-hidden(class='md:py-20 lg:py-24')
+      .relative
+        blockquote.mt-10
+          .max-w-3xl.mx-auto.text-center.text-2xl.leading-9.font-medium.text-gray-900
+            p
+              | “Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo expedita voluptas culpa sapiente alias molestiae. Numquam corrupti in laborum sed rerum et corporis.”
+          footer.mt-8
+            div(class='md:flex md:items-center md:justify-center')
+              div(class='md:flex-shrink-0')
+                img.mx-auto.h-10.w-10.rounded-full(src='https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80' alt='')
+              .mt-3.text-center(class='md:mt-0 md:ml-4 md:flex md:items-center')
+                .text-base.font-medium.text-gray-900 Judith Black
+                svg.hidden.mx-1.h-5.w-5.text-indigo-600(class='md:block' fill='currentColor' viewBox='0 0 20 20')
+                  path(d='M11 0h3L9 20H6l5-20z')
+                .text-base.font-medium.text-gray-500 CEO, Workcation
+      // Partner Logos
+      .max-w-7xl.mx-auto.py-12.px-4(class='sm:px-6 lg:px-8')
+        .grid.grid-cols-2.gap-8(class='md:grid-cols-6 lg:grid-cols-5')
+          .col-span-1.flex.justify-center(class='md:col-span-2 lg:col-span-1')
+            img.h-12(src='https://tailwindui.com/img/logos/tuple-logo-gray-400.svg' alt='Tuple')
+          .col-span-1.flex.justify-center(class='md:col-span-2 lg:col-span-1')
+            img.h-12(src='https://tailwindui.com/img/logos/mirage-logo-gray-400.svg' alt='Mirage')
+          .col-span-1.flex.justify-center(class='md:col-span-2 lg:col-span-1')
+            img.h-12(src='https://tailwindui.com/img/logos/statickit-logo-gray-400.svg' alt='StaticKit')
+          .col-span-1.flex.justify-center(class='md:col-span-3 lg:col-span-1')
+            img.h-12(src='https://tailwindui.com/img/logos/transistor-logo-gray-400.svg' alt='Transistor')
+          .col-span-2.flex.justify-center(class='md:col-span-3 lg:col-span-1')
+            img.h-12(src='https://tailwindui.com/img/logos/workcation-logo-gray-400.svg' alt='Workcation')
+
+
+    // Side by Side Features
+    .py-16.bg-gray-50.overflow-hidden(class='lg:py-24')
+      .relative.max-w-xl.mx-auto.px-4(class='sm:px-6 lg:px-8 lg:max-w-7xl')
+        .mx-auto.max-w-7xl.w-full.text-center(class='lg:pt-24 lg:pb-12')
+          h3 Features
+        .relative
+          h2.text-center.text-3xl.leading-8.font-extrabold.tracking-tight.text-gray-900(class='sm:text-4xl')
+            | What you get with Cheebot
+          p.mt-4.max-w-3xl.mx-auto.text-center.text-xl.text-gray-500
+            | Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus magnam voluptatum cupiditate veritatis in, accusamus quisquam.
+        .relative.mt-12(class='lg:mt-24 lg:grid lg:grid-cols-2 lg:gap-8 lg:items-center')
+          .relative
+            h3.text-2xl.font-extrabold.text-gray-900.tracking-tight(class='sm:text-3xl')
+              | Transfer funds world-wide
+            p.mt-3.text-lg.text-gray-500
+              | Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur minima sequi recusandae, porro maiores officia assumenda aliquam laborum ab aliquid veritatis impedit odit adipisci optio iste blanditiis facere. Totam, velit.
+            dl.mt-10.space-y-10
+              .flex
+                .flex-shrink-0
+                  .flex.items-center.justify-center.h-12.w-12.rounded-md.bg-indigo-500.text-white
+                    // Heroicon name: globe-alt
+                    svg.h-6.w-6(xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='currentColor' aria-hidden='true')
+                      path(stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9')
+                .ml-4
+                  dt.text-lg.leading-6.font-medium.text-gray-900
+                    | Competitive exchange rates
+                  dd.mt-2.text-base.text-gray-500
+                    | Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.
+              .flex
+                .flex-shrink-0
+                  .flex.items-center.justify-center.h-12.w-12.rounded-md.bg-indigo-500.text-white
+                    // Heroicon name: scale
+                    svg.h-6.w-6(xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='currentColor' aria-hidden='true')
+                      path(stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3')
+                .ml-4
+                  dt.text-lg.leading-6.font-medium.text-gray-900
+                    | No hidden fees
+                  dd.mt-2.text-base.text-gray-500
+                    | Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.
+              .flex
+                .flex-shrink-0
+                  .flex.items-center.justify-center.h-12.w-12.rounded-md.bg-indigo-500.text-white
+                    // Heroicon name: lightning-bolt
+                    svg.h-6.w-6(xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='currentColor' aria-hidden='true')
+                      path(stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M13 10V3L4 14h7v7l9-11h-7z')
+                .ml-4
+                  dt.text-lg.leading-6.font-medium.text-gray-900
+                    | Transfers are instant
+                  dd.mt-2.text-base.text-gray-500
+                    | Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.
+          .mt-10.-mx-4.relative(class='lg:mt-0' aria-hidden='true')
+            svg.absolute.transform.translate-y-16(class='left-1/2 -translate-x-1/2 lg:hidden' width='784' height='404' fill='none' viewBox='0 0 784 404')
+              defs
+                pattern#ca9667ae-9f92-4be7-abcb-9e3d727f2941(x='0' y='0' width='20' height='20' patternUnits='userSpaceOnUse')
+                  rect.text-gray-200(x='0' y='0' width='4' height='4' fill='currentColor')
+              rect(width='784' height='404' fill='url(#ca9667ae-9f92-4be7-abcb-9e3d727f2941)')
+            img.relative.mx-auto(width='490' src='https://tailwindui.com/img/features/feature-example-1.png' alt='')
+        svg.hidden.absolute.right-full.transform.translate-y-12(class='lg:block translate-x-1/2' width='404' height='784' fill='none' viewBox='0 0 404 784' aria-hidden='true')
+          defs
+            pattern#64e643ad-2176-4f86-b3d7-f2c5da3b6a6d(x='0' y='0' width='20' height='20' patternUnits='userSpaceOnUse')
+              rect.text-gray-200(x='0' y='0' width='4' height='4' fill='currentColor')
+          rect(width='404' height='784' fill='url(#64e643ad-2176-4f86-b3d7-f2c5da3b6a6d)')
+        .relative.mt-12(class='sm:mt-16 lg:mt-24')
+          div(class='lg:grid lg:grid-flow-row-dense lg:grid-cols-2 lg:gap-8 lg:items-center')
+            div(class='lg:col-start-2')
+              h3.text-2xl.font-extrabold.text-gray-900.tracking-tight(class='sm:text-3xl')
+                | Always in the loop
+              p.mt-3.text-lg.text-gray-500
+                | Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit ex obcaecati natus eligendi delectus, cum deleniti sunt in labore nihil quod quibusdam expedita nemo.
+              dl.mt-10.space-y-10
+                .flex
+                  .flex-shrink-0
+                    .flex.items-center.justify-center.h-12.w-12.rounded-md.bg-indigo-500.text-white
+                      // Heroicon name: annotation
+                      svg.h-6.w-6(xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='currentColor' aria-hidden='true')
+                        path(stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z')
+                  .ml-4
+                    dt.text-lg.leading-6.font-medium.text-gray-900
+                      | Mobile notifications
+                    dd.mt-2.text-base.text-gray-500
+                      | Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.
+                .flex
+                  .flex-shrink-0
+                    .flex.items-center.justify-center.h-12.w-12.rounded-md.bg-indigo-500.text-white
+                      // Heroicon name: mail
+                      svg.h-6.w-6(xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='currentColor' aria-hidden='true')
+                        path(stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z')
+                  .ml-4
+                    dt.text-lg.leading-6.font-medium.text-gray-900
+                      | Reminder emails
+                    dd.mt-2.text-base.text-gray-500
+                      | Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.
+            .mt-10.-mx-4.relative(class='lg:mt-0 lg:col-start-1')
+              svg.absolute.transform.translate-y-16(class='left-1/2 -translate-x-1/2 lg:hidden' width='784' height='404' fill='none' viewBox='0 0 784 404' aria-hidden='true')
+                defs
+                  pattern#e80155a9-dfde-425a-b5ea-1f6fadd20131(x='0' y='0' width='20' height='20' patternUnits='userSpaceOnUse')
+                    rect.text-gray-200(x='0' y='0' width='4' height='4' fill='currentColor')
+                rect(width='784' height='404' fill='url(#e80155a9-dfde-425a-b5ea-1f6fadd20131)')
+              img.relative.mx-auto(width='490' src='https://tailwindui.com/img/features/feature-example-2.png' alt='')
+
+    // Add-ons & Upgrades
+    .bg-white
+      .max-w-7xl.mx-auto.py-16.px-4(class='sm:px-6 lg:py-24 lg:px-8')
+        .max-w-3xl.mx-auto.text-center
+          h2.text-3xl.font-extrabold.text-gray-900 Do more with add-ons & upgrades
+          p.mt-4.text-lg.text-gray-500
+            | Ac euismod vel sit maecenas id pellentesque eu sed consectetur. Malesuada adipiscing sagittis vel nulla nec.
+        dl.mt-12.space-y-10(class='sm:space-y-0 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-12')
+          .flex
+            svg.flex-shrink-0.h-6.w-6.text-green-500(xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='currentColor' aria-hidden='true')
+              path(stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M5 13l4 4L19 7')
+            .ml-3
+              dt.text-lg.leading-6.font-medium.text-gray-900
+                | Group Ordering
+              dd.mt-2.text-base.text-gray-500
+                | Allow teams the convenience of pre-ordering lunch for their meetings.
+          .flex
+            svg.flex-shrink-0.h-6.w-6.text-green-500(xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='currentColor' aria-hidden='true')
+              path(stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M5 13l4 4L19 7')
+            .ml-3
+              dt.text-lg.leading-6.font-medium.text-gray-900
+                | Deliveries
+              dd.mt-2.text-base.text-gray-500
+                | Offer Delivery Options without the commission fees. * In select markets
+          .flex
+            svg.flex-shrink-0.h-6.w-6.text-green-500(xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='currentColor' aria-hidden='true')
+              path(stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M5 13l4 4L19 7')
+            .ml-3
+              dt.text-lg.leading-6.font-medium.text-gray-900
+                | Need More Offerings?
+              dd.mt-2.text-base.text-gray-500
+                | Cheebot can schedule a rotation of local food trucks and restaurant pop-ups to serve your guests so you don’t miss a beat. 
+          .flex
+            svg.flex-shrink-0.h-6.w-6.text-green-500(xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='currentColor' aria-hidden='true')
+              path(stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M5 13l4 4L19 7')
+            .ml-3
+              dt.text-lg.leading-6.font-medium.text-gray-900
+                | Custom Promotions
+              dd.mt-2.text-base.text-gray-500
+                | Offer your client the ability to create discounts or promotions to reward team members, loyal guests, or new customers.
+          .flex
+            svg.flex-shrink-0.h-6.w-6.text-green-500(xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='currentColor' aria-hidden='true')
+              path(stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M5 13l4 4L19 7')
+            .ml-3
+              dt.text-lg.leading-6.font-medium.text-gray-900
+                | Employee subsidization
+              dd.mt-2.text-base.text-gray-500
+                | Our subsidization program allows you to set an amount per employee and manage meal plans.
+          .flex
+            svg.flex-shrink-0.h-6.w-6.text-green-500(xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='currentColor' aria-hidden='true')
+              path(stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M5 13l4 4L19 7')
+            .ml-3
+              dt.text-lg.leading-6.font-medium.text-gray-900
+                | University meal plans
+              dd.mt-2.text-base.text-gray-500
+                | Integrate university meal plans for students to checkout quickly online.
+
+    // CTA
+    .bg-gray-50
+      .max-w-7xl.mx-auto.py-12.px-4(class='sm:px-6 lg:py-16 lg:px-8 lg:flex lg:items-center lg:justify-between')
+        h2.text-3xl.font-extrabold.tracking-tight.text-gray-900(class='sm:text-4xl')
+          span.block Ready to dive in?
+          span.block.text-indigo-600 Request a demo today.
+        .mt-8.lex(class='lg:mt-0 lg:flex-shrink-0')
+          .inline-flex.rounded-md.shadow
+            a.inline-flex.items-center.justify-center.px-5.py-3.border.border-transparent.text-base.font-medium.rounded-md.text-white.bg-indigo-600(href='#' class='hover:bg-indigo-700')
+              | Get started
+          .ml-3.inline-flex.rounded-md.shadow
+            a.inline-flex.items-center.justify-center.px-5.py-3.border.border-transparent.text-base.font-medium.rounded-md.text-indigo-600.bg-white(href='#' class='hover:bg-indigo-50')
+              | Request a demo
+
+    // Footer
+    footer.bg-white
+      .max-w-7xl.mx-auto.py-12.px-4.overflow-hidden(class='sm:px-6 lg:px-8')
+        nav.-mx-5.-my-2.flex.flex-wrap.justify-center(aria-label='Footer')
+          .px-5.py-2
+            a.text-base.text-gray-500(href='#' class='hover:text-gray-900')
+              | About
+          .px-5.py-2
+            a.text-base.text-gray-500(href='#' class='hover:text-gray-900')
+              | Blog
+          .px-5.py-2
+            a.text-base.text-gray-500(href='#' class='hover:text-gray-900')
+              | Jobs
+          .px-5.py-2
+            a.text-base.text-gray-500(href='#' class='hover:text-gray-900')
+              | Press
+          .px-5.py-2
+            a.text-base.text-gray-500(href='#' class='hover:text-gray-900')
+              | Accessibility
+          .px-5.py-2
+            a.text-base.text-gray-500(href='#' class='hover:text-gray-900')
+              | Partners
+        .mt-8.flex.justify-center.space-x-6
+          a.text-gray-400(href='#' class='hover:text-gray-500')
+            span.sr-only Facebook
+            svg.h-6.w-6(fill='currentColor' viewBox='0 0 24 24' aria-hidden='true')
+              path(fill-rule='evenodd' d='M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z' clip-rule='evenodd')
+          a.text-gray-400(href='#' class='hover:text-gray-500')
+            span.sr-only Instagram
+            svg.h-6.w-6(fill='currentColor' viewBox='0 0 24 24' aria-hidden='true')
+              path(fill-rule='evenodd' d='M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z' clip-rule='evenodd')
+          a.text-gray-400(href='#' class='hover:text-gray-500')
+            span.sr-only Twitter
+            svg.h-6.w-6(fill='currentColor' viewBox='0 0 24 24' aria-hidden='true')
+              path(d='M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84')
+          a.text-gray-400(href='#' class='hover:text-gray-500')
+            span.sr-only GitHub
+            svg.h-6.w-6(fill='currentColor' viewBox='0 0 24 24' aria-hidden='true')
+              path(fill-rule='evenodd' d='M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z' clip-rule='evenodd')
+          a.text-gray-400(href='#' class='hover:text-gray-500')
+            span.sr-only Dribbble
+            svg.h-6.w-6(fill='currentColor' viewBox='0 0 24 24' aria-hidden='true')
+              path(fill-rule='evenodd' d='M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10c5.51 0 10-4.48 10-10S17.51 2 12 2zm6.605 4.61a8.502 8.502 0 011.93 5.314c-.281-.054-3.101-.629-5.943-.271-.065-.141-.12-.293-.184-.445a25.416 25.416 0 00-.564-1.236c3.145-1.28 4.577-3.124 4.761-3.362zM12 3.475c2.17 0 4.154.813 5.662 2.148-.152.216-1.443 1.941-4.48 3.08-1.399-2.57-2.95-4.675-3.189-5A8.687 8.687 0 0112 3.475zm-3.633.803a53.896 53.896 0 013.167 4.935c-3.992 1.063-7.517 1.04-7.896 1.04a8.581 8.581 0 014.729-5.975zM3.453 12.01v-.26c.37.01 4.512.065 8.775-1.215.25.477.477.965.694 1.453-.109.033-.228.065-.336.098-4.404 1.42-6.747 5.303-6.942 5.629a8.522 8.522 0 01-2.19-5.705zM12 20.547a8.482 8.482 0 01-5.239-1.8c.152-.315 1.888-3.656 6.703-5.337.022-.01.033-.01.054-.022a35.318 35.318 0 011.823 6.475 8.4 8.4 0 01-3.341.684zm4.761-1.465c-.086-.52-.542-3.015-1.659-6.084 2.679-.423 5.022.271 5.314.369a8.468 8.468 0 01-3.655 5.715z' clip-rule='evenodd')
+        p.mt-8.text-center.text-base.text-gray-400
+          | © 2020 Workflow, Inc. All rights reserved.
